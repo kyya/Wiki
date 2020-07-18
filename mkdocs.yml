@@ -1,6 +1,52 @@
+# Project Information
 site_name: Kyya Wiki
+site_description: Kyya Wiki
+site_author: Kyya
+
+# Copyright
+copyright: "Copyright &copy; 2020 Kyya"
+
+# Theme
 theme:
-  name: material
+  name: "material"
+  language: "zh"
+  palette:
+    primary: "white"
+    accent: "red"
+  icon:
+    logo: "material/school"
+  features:
+    - tabs
+  font:
+    text: Noto Sans
+    code: Source Code Pro
 markdown_extensions:
   - admonition
   - footnotes
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.tilde
+
+# Repository
+repo_name: "Kyya/Wiki"
+repo_url: "https://github.com/Kyya/Wiki"
+edit_uri: "blob/master/docs/"
+
+# Customization
+extra:
+  copyright: "CC BY-NC-SA 4.0"
