@@ -22,7 +22,11 @@ theme:
     code: Source Code Pro
 markdown_extensions:
   - admonition
+  - codehilite:
+      guess_lang: false
   - footnotes
+  - toc:
+      permalink: true
   - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
@@ -50,3 +54,15 @@ edit_uri: "blob/master/docs/"
 # Customization
 extra:
   copyright: "CC BY-NC-SA 4.0"
+
+nav:
+  - JS L2 Position:
+      - Getting Started: JS-L2-Position/index.md
+      - Maturity (Experience, Years): JS-L2-Position/maturity.md
+      - Tech Expertise: JS-L2-Position/tech-expertise.md
+      - Design Thinking and Documentation Skills: JS-L2-Position/design-thinking-and-documentation-skills.md
+      - Quality, ENGX: JS-L2-Position/quality-and-engx.md
+      - Software Development Process Knowledge: JS-L2-Position/software-development-process-knowledge.md
+      - Roles Played on a Project, Leadership, Soft Skills: JS-L2-Position/roles-played-on-a-project-leadership-and-soft-skills.md
+      - Non-project Organizational Influence: JS-L2-Position/non-project-organizational-influence.md
+      - English Language: JS-L2-Position/english-language.md
