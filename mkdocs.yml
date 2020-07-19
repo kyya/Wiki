@@ -54,7 +54,8 @@ edit_uri: "blob/master/docs/"
 # Customization
 extra:
   copyright: "CC BY-NC-SA 4.0"
-
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
 nav:
   - JS L2 Position:
       - Getting Started: JS-L2-Position/index.md
@@ -66,3 +67,17 @@ nav:
       - Roles Played on a Project, Leadership, Soft Skills: JS-L2-Position/roles-played-on-a-project-leadership-and-soft-skills.md
       - Non-project Organizational Influence: JS-L2-Position/non-project-organizational-influence.md
       - English Language: JS-L2-Position/english-language.md
+  - Markdown CheatSheet:
+      - Welcome: markdown-cheatsheet/welcome.md
+      - Headings: markdown-cheatsheet/headings.md
+      - Emphasis: markdown-cheatsheet/emphasis.md
+      - Line Breaks: markdown-cheatsheet/lineBreaks.md
+      - Lists: markdown-cheatsheet/lists.md
+      - Tables: markdown-cheatsheet/tables.md
+      - Links: markdown-cheatsheet/links.md
+      - Images: markdown-cheatsheet/images.md
+      - Admonition: markdown-cheatsheet/admonition.md
+      - Block Quotes: markdown-cheatsheet/blockQuotes.md
+      - Emojis List: markdown-cheatsheet/emoji.md
+      - Embed External Sources: markdown-cheatsheet/embedExternalSources.md
+      - Metadata Per Page: markdown-cheatsheet/metaData.md
