@@ -28,11 +28,12 @@ At least Intermediate level:
     ```js
     const array1 = [1, 2, 3, 4];
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    ```
 
     // 1 + 2 + 3 + 4
     console.log(array1.reduce(reducer));
     // expected output: 10
-
+    
     // 5 + 1 + 2 + 3 + 4
     console.log(array1.reduce(reducer, 5));
     // expected output: 15
@@ -45,8 +46,7 @@ At least Intermediate level:
         * 只关注循环次数最多的一段代码
         * 总复杂度等于量级最大的那段代码的复杂度
         * 嵌套代码的复杂度等于嵌套内外代码复杂度的乘积
-    * 空间复杂度: 算法的存储空间和数据规模之间的关系
-
+        * 空间复杂度: 算法的存储空间和数据规模之间的关系
 
     ```js
     function initArr(n) {
@@ -82,20 +82,62 @@ At least Intermediate:
 
 - Understanding of his/her project programming paradigm (OOP, FP, RP)
 
-- OOP
-    - Encapsulation
-    - Abstraction
-    - Inheritance
-    - Polymorphism
-    - ^^Dependency injection^^
-- FP
-    - Pure functions
-    - Immutability
-    - Functions as first-class entities
-    - Functions composition
-    - High order functions
-    - Recursion
-    - Currying/Memoization
+    #### OOP
+    
+
+!!!note "Combine a group of related variables and functions into a unit, and call this unit an `object`"
+    [Object-oriented Programming in 7 minutes | Mosh](https://www.youtube.com/watch?v=pTB0EiLXUC8&t=99s)
+
+* Encapsulation (封装)
+	* Group related variables and functions operated on them into objects
+		把"属性"（property）和"方法"（method），封装成一个对象
+```javascript
+function Cat(name,color){
+	this.name = name;
+	this.color = color;
+	this.type = "猫科动物";
+	this.eat = function(){alert("吃老鼠");
+	};
+}
+```
+
+	![encapsulation](../assets/images/encapsulation.png)
+
+* Abstraction (抽象)
+	
+	* Hide some of the properties and methods from the outside
+	
+	![abstraction](../assets/images/abstraction.png)
+	
+* Inheritance (继承)
+
+    - A mechanism that allows you to eliminate redundant code
+    - 继承可以让各个对象都继承同一个对象的参数和方法，从而减少代码冗余
+
+	![inheritance](../assets/images/inheritance.png)
+
+!!! example "应用实例"
+	[构造函数的继承](https://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance.html)
+
+* Polymorphism (多态)
+	* Allow programmers to get rid of long ethanol's or switch and case statements
+
+    多态的思想实际上是把“做什么”和“谁去做”分离开来，保证不同的对象在用【不同的代码】执行【同样的方法】时，能改动最少的代码
+
+!!! example "应用实例"
+  	[JavaScript面向对象之多态](https://blog.csdn.net/juzipidemimi/article/details/88566087)
+
+* ^^Dependency injection^^
+
+#### FP
+
+- Pure functions
+- Immutability
+- Functions as first-class entities
+- Functions composition
+- High order functions
+- Recursion
+- Currying/Memoization
 
 - Uses at least one of them on a project, able to explain its concepts
 
