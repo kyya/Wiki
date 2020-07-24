@@ -28,7 +28,6 @@ At least Intermediate level:
     ```js
     const array1 = [1, 2, 3, 4];
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    ```
 
     // 1 + 2 + 3 + 4
     console.log(array1.reduce(reducer));
@@ -50,10 +49,10 @@ At least Intermediate level:
 
     ```js
     function initArr(n) {
-    var arr = [];
-    for (var i = 0; i < n; i++) {
+      var arr = [];
+      for (var i = 0; i < n; i++) {
         arr[i] = i;
-    }
+      }
     }
     ```
     根据时间复杂度的推算，忽略掉常数量级，每次数组赋值都会申请一个空间存储变量，所以此函数的空间复杂度为 $O(n)$。常见的空间复杂度只有 $O(1)$、$O(n)$、$O(n^2)$
@@ -82,52 +81,51 @@ At least Intermediate:
 
 - Understanding of his/her project programming paradigm (OOP, FP, RP)
 
-    #### OOP
-    
+#### OOP
+
+
+
+* Encapsulation (封装)
+    * Group related variables and functions operated on them into objects
+    * 把"属性"（property）和"方法"（method），封装成一个对象
+    ![encapsulation](../assets/images/encapsulation.png)
 
 !!!note "Combine a group of related variables and functions into a unit, and call this unit an `object`"
     [Object-oriented Programming in 7 minutes | Mosh](https://www.youtube.com/watch?v=pTB0EiLXUC8&t=99s)
 
-* Encapsulation (封装)
-	* Group related variables and functions operated on them into objects
-		把"属性"（property）和"方法"（method），封装成一个对象
-```javascript
-function Cat(name,color){
-	this.name = name;
-	this.color = color;
-	this.type = "猫科动物";
-	this.eat = function(){alert("吃老鼠");
-	};
-}
-```
-
-	![encapsulation](../assets/images/encapsulation.png)
+    ```js
+    function Cat(name,color) {
+        this.name = name;
+        this.color = color;
+        this.type = "猫科动物";
+        this.eat = function() {
+            alert("吃老鼠");
+        }
+    }
+    ```
 
 * Abstraction (抽象)
-	
-	* Hide some of the properties and methods from the outside
-	
-	![abstraction](../assets/images/abstraction.png)
-	
-* Inheritance (继承)
+    * Hide some of the properties and methods from the outside
+    ![abstraction](../assets/images/abstraction.png)
 
+* Inheritance (继承)
     - A mechanism that allows you to eliminate redundant code
     - 继承可以让各个对象都继承同一个对象的参数和方法，从而减少代码冗余
+    ![inheritance](../assets/images/inheritance.png)
 
-	![inheritance](../assets/images/inheritance.png)
 
 !!! example "应用实例"
-	[构造函数的继承](https://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance.html)
+    [构造函数的继承](https://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance.html)
 
 * Polymorphism (多态)
-	* Allow programmers to get rid of long ethanol's or switch and case statements
+    * Allow programmers to get rid of long ethanol's or switch and case statements
 
     多态的思想实际上是把“做什么”和“谁去做”分离开来，保证不同的对象在用【不同的代码】执行【同样的方法】时，能改动最少的代码
 
 !!! example "应用实例"
-  	[JavaScript面向对象之多态](https://blog.csdn.net/juzipidemimi/article/details/88566087)
+    [JavaScript面向对象之多态](https://blog.csdn.net/juzipidemimi/article/details/88566087)
 
-* ^^Dependency injection^^
+* Dependency injection
 
 #### FP
 
